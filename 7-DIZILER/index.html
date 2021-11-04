@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>DIZILER</h1>
+<script type="text/javascript">
+var marka=["opel","Mercedes","Audi","BMW"]
+var model=new Array("Corsa","S-Klass","Q3","ix3")
+
+document.writeln(marka[0]+"<br>")
+document.writeln(model[3]+"<br>")
+
+// Sona Ekleme
+marka.push("Renault","Tofas")
+model.push("Megane","Sahin")
+
+document.writeln(marka+" / "+model+"<br>")
+
+// Basa Ekleme
+marka.unshift("Boeing","togg")
+document.writeln(marka+"<br>")
+
+// en sondaki elemani silme
+marka.pop()
+document.writeln(marka+"<br>")
+document.writeln(marka.pop())
+
+//en bastaki elemani silme
+document.writeln(marka.shift()+"<br>")
+document.writeln(marka+"<br>")
+
+//array yazdirma
+
+for (var i = 0; i < marka.length; i++) {
+  document.writeln(marka[i])
+}
+
+document.writeln("<br>")
+//indexOf özelligi; bulunmayan eleman icin bize JS daima -1 dönderir
+
+if (marka.indexOf("Reno")!==-1) {
+  document.writeln("Böyle bir marka var")
+} else {
+  document.writeln("Marka bulunamadi")
+}
+
+
+</script>
+
+  </body>
+</html>
