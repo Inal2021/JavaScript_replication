@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<script type="text/javascript">
+
+  /* 1) Bir personelin asagidaki bilgilerini object icerisine alalim;
+  ad: Beyza
+  soyad: Güvenc
+  cinsiyet: Kadin
+  telefon: 099999999999
+  adres: Ankara, cankaya
+  diller: ingilizce, italyanca, ispanyolca
+  hobiler: tenis, yüzme ve kitap okumak
+
+  2) Bu personel kac dil bilmektedir?
+  3) Bu personelin hobilerini altalta yazdiriniz
+  4) 3 elemanli personel bilgi sistemi olusturun.
+    */
+
+// 1. soru cözümü
+var personel={
+  ad: 'Beyza',
+  soyad: 'Güvenc',
+  cinsiyet: 'Kadin',
+  telefon: '099999999999',
+  adres: 'Ankara, cankaya',
+  diller: ['ingilizce', 'italyanca', 'ispanyolca'],
+  hobiler: ['tenis', 'yüzme', 'kitap okumak']
+  }
+
+console.log(personel);
+
+  //2. soru cözümü
+console.log(personel.diller.length);
+console.log(personel.diller);
+
+//3. soru cözüm
+
+console.log(personel.hobiler);
+
+
+// 1. yontem
+for (var i = 0; i < personel.hobiler.length; i++) {
+  console.log(personel.hobiler[i]);
+}
+
+// 2. yöntem
+personel.hobiler.forEach(function(hobi)
+{console.log(hobi);}
+)
+
+//4. soru cözüm
+
+var personeller=
+[
+{
+  ad: 'Beyza',
+  soyad: 'Güvenc',
+  cinsiyet: 'Kadin',
+  telefon: '099999999999',
+  adres: 'Ankara, cankaya',
+  diller: ['ingilizce', 'italyanca', 'ispanyolca'],
+  hobiler: ['tenis', 'yüzme', 'kitap okumak']
+},
+{
+  ad: 'Tahir',
+  soyad: 'Cesur',
+  cinsiyet: 'Erkek',
+  telefon: '099998782999',
+  adres: 'Izmir, konak',
+  diller: ['ingilizce', 'ispanyolca'],
+  hobiler: ['golf', 'futbol', 'kitap okumak']
+},
+{
+  ad: 'Basri',
+  soyad: 'konuskan',
+  cinsiyet: 'erkek',
+  telefon: '0111111111',
+  adres: 'Neuss, kaarst',
+  diller: ['Almanca', 'italyanca', 'ispanyolca'],
+  hobiler: ['yüzme','Java', 'kitap okumak']
+  }
+
+]
+
+personeller.forEach(function(prs) {
+
+console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+console.log(prs.ad+' '+prs.soyad);
+console.log('===========================');
+})
+
+
+</script>
+
+
+  <body>
+
+  </body>
+</html>

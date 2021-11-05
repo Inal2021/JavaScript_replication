@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <script type="text/javascript">
+
+    var marka=['Toyota','BMW','Opel','Audi'];
+    var model=['Corolla','320d','Meriva','Q3']
+    var years=['2015','2012','2016','2014'];
+
+
+for (var i = 0; i < marka.length; i++) {
+  document.write(marka[i]+' '+model[i]+' '+years[i]+"<br>");
+}
+
+// alternatif
+
+var toyota=['toyota','Corolla','2015']
+
+//OBJE YÖNTEMI
+
+var araba={
+  marka:'Toyota',
+  model:'Corolla',
+  yil:2014,
+  renk:'koyu gri',
+  otomatik:true
+}
+
+console.log(araba);
+
+console.log(araba.renk);
+console.log(araba['renk']);
+
+// Obje 2. yöntem;
+
+var oto=new Object();
+
+oto.marka='Audi';
+oto.model='Q3';
+oto.yil='2015';
+
+console.log(oto)
+
+oto.vites='otomatik';
+
+console.log(oto)
+
+
+// Birden fazla temel veri ile dizi icerisinde Object olusturma
+
+var arabalar=[
+araba,
+{
+  marka:'BMW',
+  model:'3.20d',
+  yil:2011,
+  renk:'siyah',
+  otomatik:true
+},
+{
+  marka:'Mercedes',
+  model:'SL300',
+  yil:2020,
+  renk:'kirmizi',
+  otomatik:false
+}
+];
+
+console.log(arabalar);
+console.log(arabalar[1]);
+
+for (var i = 0; i < arabalar.length; i++) {
+  console.log(arabalar[i].renk);
+}
+
+for (var i = 0; i < arabalar.length; i++) {
+  console.log(arabalar[i].yil);
+}
+
+
+
+
+  </script>
+  <body>
+
+
+
+
+  </body>
+</html>
