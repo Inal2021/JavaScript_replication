@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+/* 1) Sayi tek mi cift mi? ,
+2) Girilen sayi faktöryel,
+3) Kendisine gönderilen bir dizinin elemanlarini ekrana eleman olarak (altalta) yazdiran bir kod olusturalim
+
+*/
+
+//1. soru cözümü;
+
+function functionName(a) {
+  return a% 2 == 0 ? "Çift" : "Tek";
+}
+
+console.log(functionName(122));
+
+
+//2. soru cözümü; --> 5!=5*4*3*2
+
+function faktoryel(fsayi){
+var sonuc=1;
+for (var i = 2; i <= fsayi; i++) {
+  sonuc*=i;
+}
+return sonuc;
+}
+
+console.log("faköryel: "+faktoryel(3));
+
+
+//3. soru cözümü;
+var marka=["opel","Mercedes","Audi","BMW"]
+var model=new Array("Corsa","S-Klass","Q3","ix3")
+
+function yazdir(x){
+
+    console.log(x);
+
+}
+
+
+function yazdir(dizi) {
+  dizi.forEach(function(oto){
+    console.log(oto);
+  })
+}
+
+yazdir(marka)
+yazdir(model)
+
+
+
+</script>
+
+
+  </body>
+</html>
