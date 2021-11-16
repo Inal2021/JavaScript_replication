@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+<script type="text/javascript">
+  /*Cümle özetleme uygulamasi: istedigimiz karekter sayisindan itibaren bölsün. Kelime ortasina denk gelmesin*/
+
+var cumle='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi numquam vero, pariatur tempore quia asperiores delectus itaque, facere vel cumque?'
+
+function ozet(cumle,maxKarakter) {
+
+var ozetCumle=[];
+
+if (maxKarakter>cumle.length) {
+  console.log("yazdiginiz cümle ozetlenecek kadar uzun degil");
+} else {
+  var kelimeler=cumle.split(' ')
+  //document.writeln(kelimeler)
+var toplamKarakter=0;
+for (var i = 0; i < kelimeler.length; i++) {
+  ozetCumle.unshift(kelimeler[i])
+  toplamKarakter+=kelimeler[i].length;
+  if (toplamKarakter>maxKarakter) {
+    break;
+  }
+}
+
+}
+
+console.log( ozetCumle.join(' ')+'...');
+}
+
+ozet(cumle,20);
+
+
+</script>
+
+  <body>
+
+  </body>
+</html>
