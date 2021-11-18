@@ -26,8 +26,6 @@
   background-color: yellow;
 }
 
-
-
 </style>
 
   </head>
@@ -43,8 +41,22 @@
 
 </div>
 
-
     <script type="text/javascript">
+
+var sariMi=false;
+var sari=document.getElementById("sari");
+
+setInterval (function () {
+
+if (sariMi) {
+  sari.style.background='purple';
+} else {
+  sari.style.background='yellow';
+}
+sariMi =!sariMi;
+},1000)
+
+
 
     </script>
   </body>
