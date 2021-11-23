@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Content ve InnerHTML </title>
+  </head>
+  <body>
+<h1 id="title">Bedava resimler</h1>
+<h3 id="subtitle">aradiginiz fotograflar burada</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo vitae ut! Ipsum non omnis, quibusdam ea unde sunt commodi?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quasi labore est. Delectus, nihil, nam.</p>
+<p>Lorem ipsum dolor sit amet, <strong> consectetur adipisicing elit.</strong> Fugiat aspernatur dicta quam quisquam quae dolorum sit tenetur minus, nulla nam recusandae quas repellat. Quidem dolore nemo, nesciunt perspiciatis laboriosam culpa.</p>
+<ul class="liste">
+  <li>resim 1</li>
+  <li>resim 2</li>
+  <li>resim 3</li>
+</ul>
+
+
+<script>
+
+var p = document.getElementsByTagName('p')[2]
+console.log(p);
+console.log(p.textContent);
+
+var ul=document.querySelector('ul')
+// console.log(ul);
+// console.log(ul.textContent);
+// console.log(document.body.textContent);
+
+p.textContent ='bugün <b> dersine</b> calis'
+console.log(p.textContent);
+
+p.innerHTML ='bugün <b> dersine</b> calis'
+console.log(p);
+
+ul.innerHTML ='<li>madde1</li><li>madde1</li>'
+
+
+
+</script>
+
+  </body>
+  </html>
