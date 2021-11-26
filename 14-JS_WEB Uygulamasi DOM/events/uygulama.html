@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+  .kutu{
+    width:120px;
+    height:120px;
+    margin: 10px;
+    float:left;
+
+  }
+
+  #mavi{
+    background-color: blue;
+  }
+
+  #kirmizi{
+    background-color: red;
+  }
+
+  #sari{
+    background-color: yellow;
+  }
+
+
+</style>
+  </head>
+
+  <body>
+    <div id="mavi" class="kutu">
+
+    </div>
+    <div id="kirmizi"  class="kutu">
+
+    </div>
+    <div id="sari" class="kutu">
+
+    </div>
+
+<script>
+
+// 1. YOL
+// var mavi=document.querySelector('#mavi')
+// mavi.addEventListener('click',function(){
+//   this.style.display="none";
+// });
+//
+// var kirmizi=document.querySelector('#kirmizi')
+// kirmizi.addEventListener('click',function(){
+//   this.style.display="none";
+// });
+
+
+//2.YOL
+var kutular=document.querySelectorAll('.kutu')
+
+kutular.forEach(function(x){
+console.log(x);
+x.addEventListener('click',function(){
+  x.style.display="none";
+});
+
+});
+
+
+
+
+</script>
+
+  </body>
+</html>

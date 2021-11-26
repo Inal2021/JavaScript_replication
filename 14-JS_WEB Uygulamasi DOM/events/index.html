@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1 id="title">Best free photos</h1>
+<h3 id="subtitle">search photos</h3>
+<button type="button" id="changeText">Change</button>
+<button type="button" id="changeText1">Change1</button>
+
+
+<p>Lorem ipsum <strong> dolor sit amet</strong>, consectetur adipisicing elit. Unde dolorum, maxime eos.</p>
+
+<ul>
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ul>
+
+    <script>
+var btn=document.querySelector('#changeText')
+var p=document.querySelector('p')
+
+btn.addEventListener('click', function(){
+
+p.textContent="button clicked"
+
+} )
+
+
+
+var h1=document.querySelector('#title');
+
+h1.addEventListener('click',changeColor)
+
+
+function changeColor(){
+
+h1.style.background='black';
+
+h1.style.color='green';
+
+};
+
+var btn1=document.querySelector('#changeText1')
+btn1.addEventListener('click',changeColor)
+
+
+// var ul=document.querySelector('ul')
+// ul.addEventListener('click',function(){
+//   alert('ul clicked')
+// })
+
+var li=document.querySelectorAll('li')
+
+for (var i =0; i<li.length; i++){
+  li[i].addEventListener('click',function(){
+
+//this.style.background='purple';
+this.style.textDecoration='underline';
+
+  })
+}
+
+
+
+
+    </script>
+  </body>
+</html>
