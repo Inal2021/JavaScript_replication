@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+function test_1() {
+  return {           // dogru olan return cesidi bu sekilde. OBJECT
+    name: 'CodeHunter'
+  };
+}
+
+
+function test_2() {
+  return              // JS return gibi kodlarda süslü parantezi yaninda istiyor. UNDEFINED
+  {
+    name: 'CodeHunter'
+  };
+}
+
+console.log(test_1());
+console.log(test_2());
+
+
+
+var x= 5;
+var y= 8;
+
+
+// if lerde parantez problemi yasamadik
+if(x<y) {
+  console.log('islem gerceklesti');
+}
+
+if(x<y)
+{
+  console.log('islem yine de gerceklesti gerceklesti');
+}
+
+
+
+// ifleri function blogu icerisinde inceleyelim;
+
+function yeniTest() {
+  if(x<y) {
+    console.log('islem gerceklesti');
+  }
+
+  if(x<y)
+  {
+    console.log('islem yine de gerceklesti gerceklesti');
+  }
+}
+
+yeniTest();
+
+
+
+    </script>
+  </body>
+</html>

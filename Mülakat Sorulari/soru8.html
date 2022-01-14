@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  // JS bir Arrayda basina ve sonuna nasil ekleme yaparsiniz
+
+// Classic metod
+//unshift   push
+
+var array =['a','b','c','d','e']
+
+// console.log(array);
+//
+//
+// array.unshift('start')
+// array.push('finish')
+//
+// console.log(array);
+
+
+//ES6 ile basina ve sonuna ekleme
+
+array=['start',...array,'finish'];
+
+console.log(array);
+
+
+</script>
+
+  </body>
+</html>

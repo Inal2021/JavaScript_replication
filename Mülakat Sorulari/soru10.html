@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+// whats is the output
+
+var num=5;
+function outer() {
+
+var num=2;
+
+function inner() {
+  num++;
+  var num=3;
+  num++;
+  console.log(num);
+}
+console.log('inner oncesi : '+num);
+inner();
+
+}
+console.log('inner sonrasi : '+num);
+outer();
+
+
+    </script>
+  </body>
+</html>

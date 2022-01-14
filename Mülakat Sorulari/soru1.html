@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script>
+// var ile let arasindaki farklar;
+
+// VAR is there in JS from the beginning but LET was introduced in ES2015/ES6, why? because of SECURITY issues.
+// VAR has function scope in JS, but conversely LET has block scope.
+// VAR gets hoisted, LET is specified
+
+
+
+let x=function(){
+
+  console.log(v);
+  console.log(l);
+
+if(true) {
+
+  var v=2;
+  let l=1;
+
+}
+
+
+}
+
+x();
+
+
+
+
+</script>
+
+
+  </body>
+</html>

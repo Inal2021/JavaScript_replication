@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+(function () {
+b=3;
+
+var a=b; //==>> syntax.err hatasi verir
+//console.log(a);
+console.log(a);
+console.log(b);
+}) ();
+
+console.log("a defined? "+(typeof a!=="undefined")); //false
+console.log("b defined? "+(typeof b!=="undefined")); //true
+console.log(typeof a);
+console.log(typeof b);
+
+    </script>
+  </body>
+</html>

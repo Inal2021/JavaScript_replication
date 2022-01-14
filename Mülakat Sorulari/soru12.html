@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script type="text/javascript">
+
+  var hero={
+    _name: 'Hz Hamza',
+    getSecretIdentity: function() {
+      return this._name;
+    }
+  }
+
+  var  stoleSecretIdentity = hero.getSecretIdentity();
+
+  console.log('1. secenek : '+stoleSecretIdentity()); //bu hata verir. stoleSecretIdentity parantezleri kalkmali cümkü method call etmez.
+  console.log('2. secenek : '+hero.getSecretIdentity()); // 2. secenek : Hz Hamza
+
+</script>
+
+  </body>
+</html>

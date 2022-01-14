@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script>
+// what is prototypal inheritance?
+
+// Every object has a property called prototype. In this way, we can explain that, The prototypal Inheritance is a feature in Javascript
+// used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object.
+
+let car=function(model){
+  this.model=model;
+}
+
+car.prototype.getModel=function(){
+  return this.model;
+}
+
+let mercedes=new car('mercedes');
+console.log(mercedes.getModel());
+let fiyat=new car('toyota');
+console.log(fiyat.getModel());
+
+</script>
+
+  </body>
+</html>
